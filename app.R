@@ -9,7 +9,8 @@ server <- function(input, output, session) {
   output$plotted_series <- renderPlot({
     autoplot(tourism[tourism$Region == "Adelaide", ])
   })
-  
+
 }
+
 
 shinyApp(ui, server)
